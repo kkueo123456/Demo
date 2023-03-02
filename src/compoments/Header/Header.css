@@ -1,0 +1,20 @@
+.header-wrap {
+    height: 66px;
+    margin: 0px auto 0px;
+    position: sticky;
+    top: 0px;
+    background: #121212;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+}
+.header-left{
+    color: white;
+    padding-left: 120px;
+}
+.header-title{
+    cursor: pointer;
+    margin-right: 24PX;
+}

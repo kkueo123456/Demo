@@ -1,0 +1,69 @@
+
+.abate-wrap .ant-table {
+    background-color: rgb(23, 27, 49);
+    color: white;
+}
+
+.abate-wrap .abate-wrap-head {
+    margin-bottom: 18px;
+}
+
+.abate-wrap .ant-radio-wrapper {
+    color: white !important;
+}
+
+.abate-wrap .ant-table-thead .ant-table-cell {
+    color: white;
+    background-color: rgb(33, 33, 69);
+
+}
+
+.abate-wrap .ant-table-cell span {
+    font-size: 14px !important;
+}
+
+.abate-wrap .ant-radio-checked .ant-radio-inner {
+    border-color: rgb(74, 148, 238);
+    background-color: rgb(74, 148, 238);
+}
+
+.abate-wrap .ant-table-tbody {
+    height: 350px !important;
+}
+
+.abate-wrap .ant-table-placeholder:hover>td {
+    background-color: rgb(23, 27, 49) !important;
+}
+
+.abate-wrap .ant-table-cell-row-hover {
+    background-color: rgb(23, 27, 49) !important;
+}
+
+.abate-wrap .abate-item-info {
+    display: flex;
+    align-items: center;
+}
+
+.abate-item-info-img img {
+    width: 105px;
+    height: 80px;
+}
+
+.abate-item-info-text {
+    width: 120px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.agree {
+    cursor: pointer;
+    color: rgb(74, 148, 238);
+}
+
+.disAgree {
+    cursor: pointer;
+    color: rgb(185, 0, 65);
+}
+.ant-table-thead .ant-table-cell::before{
+    background: none !important;
+}

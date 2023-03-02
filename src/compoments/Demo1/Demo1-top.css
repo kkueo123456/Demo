@@ -1,0 +1,128 @@
+.demo-top-wrap {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 115px;
+}
+
+.left-title {
+    font-size: 32px;
+}
+
+.left-btn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.left-other div {
+    display: flex;
+}
+
+.left-other div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    height: 75px;
+    border: 1px solid rgb(245, 239, 239);
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.left-other div:nth-child(1) a:nth-child(1) {
+    border-radius: 20px 0 0 0;
+}
+
+.left-other div:nth-child(1) a:nth-child(3) {
+    border-radius: 0px 20px 0 0;
+}
+
+.left-other div:nth-child(2) a:nth-child(1) {
+    border-radius: 0px 0 0 20px;
+}
+
+.left-other div:nth-child(2) a:nth-child(3) {
+    border-radius: 0px 0px 20px 0;
+}
+
+.left-other div span:not(.left-other div span:last-child) {
+    border-right: none;
+}
+
+.demo-top-right {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.demo-top-right .ant-card-head {
+    /* margin-left: 120px; */
+
+    border-bottom: none;
+
+}
+
+.account {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 2px;
+}
+
+.ethereum {
+    color: white;
+    font-size: 18PX;
+    font-weight: normal;
+    margin-top: 12px;
+}
+
+.ant-card {
+    background-image: linear-gradient(70deg, hsla(28, 100%, 74%, 1), hsla(340, 100%, 76%, 1), hsla(343, 100%, 76%, 1));
+    width: 260px;
+    height: 150px;
+}
+
+#basic {
+    margin-top: 24px;
+}
+.ant-form-item-explain-error {
+    padding: 0 20px;
+}
+
+.demo-top-right-bottom {
+    width: 300px;
+    padding-bottom: 15px;
+    background-color: rgb(41, 41, 77);
+    margin-top: 24px;
+    border-radius: 20px;
+}
+
+#public-input {
+    border: none;
+    background-color: rgb(30, 37, 64);
+    width: 90%;
+    color: white;
+}
+
+
+.ant-input::placeholder {
+    color: #ccc !important;
+  }
+
+.ant-form-item {
+    margin-bottom: 12px;
+}
+
+.ant-col {
+    max-width: 100%;
+
+}
+
+.ant-form-item-control-input-content {
+    display: flex;
+    justify-content: center;
+}

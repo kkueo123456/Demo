@@ -1,0 +1,5 @@
+.demo-wrap {
+    padding:0px 160px;
+    color: white;
+    background-image: linear-gradient(45deg, hsla(253,16%,7%,1),rgb(17, 7, 44), hsla(339,49%,30%,1));
+}

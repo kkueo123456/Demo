@@ -1,0 +1,105 @@
+.demo2-head {
+    display: flex;
+    overflow: hidden;
+}
+
+.demo2-head-wrap {
+    /* display: flex;
+    align-items: center; */
+    /* column-gap: 2px; */
+    position: relative;
+    left: -150px;
+    height: 120px;
+    background-color: #0d101a;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+}
+
+.head-logo {
+    width: 200px;
+    height: 120px;
+    background-image: url('@/assets/img/logo_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    text-align: center;
+    line-height: 120px;
+    z-index: 2;
+
+}
+
+.head-logo span {
+    font-size: 30px;
+    color: white;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.head-item {
+    position: relative;
+    position: absolute;
+    width: 160px;
+    height: 104px;
+    padding: 0 7px;
+}
+
+.head-item .cs-img {
+    width: 144px;
+    height: 100%;
+}
+
+.head-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+    background-image: url('@/assets/img/gift.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.item-text {
+    position: absolute;
+    bottom: 5px;
+    color: #ccc;
+    left: 4px;
+    font-size: 12px;
+}
+
+.cs-logo {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
+}
+
+.color-1 {
+    border-bottom: 2px solid #ffba6b;
+    background: radial-gradient(101.95% 157% at 50% -23%, rgba(238, 177, 58, .6) 0, rgba(198, 114, 15, .474) 31.63%, rgba(81, 55, 17, 0) 100%), #21222b;
+}
+
+.color-2 {
+    border-bottom: 2px solid #af416e;
+    background: radial-gradient(101.95% 157% at 50% -23%, rgba(238, 58, 101, .4) 0, rgba(207, 38, 89, .316) 31.63%, rgba(81, 17, 29, 0) 100%), #21222b
+}
+
+.color-3 {
+    border-bottom: 2px solid #d2d6ff;
+    background: radial-gradient(101.95% 157% at 50% -23%, rgba(130, 78, 242, .4) 0, rgba(109, 39, 197, .316) 31.63%, rgba(45, 17, 81, 0) 100%), #21222b;
+}
+
+.color-4 {
+    border-bottom: 2px solid #5968ff;
+    background: radial-gradient(101.95% 157% at 50% -23%, rgba(78, 81, 242, .4) 0, rgba(39, 56, 197, .32) 31.63%, rgba(81, 17, 17, 0) 100%), #21222b;
+}
+
+.color-5 {
+    border-bottom: 2px solid #d2d6ff;
+    background: radial-gradient(101.95% 157% at 50% -23%, rgba(191, 198, 201, .4) 0, rgba(169, 175, 176, .316) 31.63%, rgba(67, 75, 77, 0) 100%), #21222b;
+}

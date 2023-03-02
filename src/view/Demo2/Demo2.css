@@ -1,0 +1,114 @@
+.demo2-wrap {
+    min-height: calc(100vh - 66px);
+    background-image: url('@/assets/img/bg.png');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.ant-menu {
+    padding: 0 100px;
+    color: white;
+    background-color: rgb(13, 16, 26);
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active {
+    color: white !important;
+}
+
+.ant-menu-item-active::after {
+    border-bottom: 2px solid white !important;
+}
+
+.ant-menu-item-selected {
+    color: rgb(118, 177, 249) !important;
+}
+
+.ant-menu-item-selected::after {
+    border-bottom: 2px solid rgb(74, 148, 238) !important;
+}
+
+.demo2-body {
+    color: white;
+    padding: 30px 115px;
+}
+
+.demo2-main {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(13, 16, 26);
+}
+
+.demo2-main .user-info {
+    display: flex;
+    color: white;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.demo2-main .user-info span {
+    display: flex;
+    align-items: center;
+
+}
+
+.info-item {
+    margin-right: 25px;
+}
+
+.wallet-info {
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.wallet-info span {
+    cursor: pointer;
+    color: #1677ff;
+}
+
+.demo2-wrap .ant-float-btn .ant-float-btn-body {
+    background-color: rgb(51, 64, 134) !important;
+}
+
+.float-button-wrap {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    border-radius: 6px;
+    background-color: rgb(51, 64, 134) !important;
+    right: 25px;
+    bottom: 30%;
+    cursor: pointer;
+}
+
+.float-button {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.float-button .anticon-message {
+    margin: auto;
+    color: white;
+    font-size: 18px;
+}
+.float-number{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    line-height: 16px;
+    background-color: rgb(154, 0, 54);
+    top: -6px;
+    right: -6px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+}

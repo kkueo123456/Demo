@@ -1,0 +1,106 @@
+.list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 135px;
+    padding: 0 7px;
+}
+
+.item-left {
+    width: 124px;
+    height: 93px;
+    position: relative;
+}
+
+.list-item .cs-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.item-text {
+    position: absolute;
+    bottom: 5px;
+    color: #ccc;
+    left: 4px;
+    font-size: 12px;
+}
+
+.item-right {
+    font-size: 12px;
+}
+
+.item-right .price {
+    font-weight: 700;
+}
+
+.item-right p {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.cs-logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
+}
+
+.color-1 {
+    border-bottom: 2px solid #ffba6b;
+    background: radial-gradient(101.95% 157% at 50% -23%, rgba(238, 177, 58, .6) 0, rgba(198, 114, 15, .474) 31.63%, rgba(81, 55, 17, 0) 100%), #21222b;
+}
+
+.color-2 {
+    border-bottom: 2px solid #af416e;
+    background: radial-gradient(101.95% 157% at 50% -23%, rgba(238, 58, 101, .4) 0, rgba(207, 38, 89, .316) 31.63%, rgba(81, 17, 29, 0) 100%), #21222b
+}
+
+.item-right .btn {
+    width: 100%;
+    padding: 0px;
+    border-radius: 1px;
+    color: white;
+
+}
+
+.item-right .btn-down {
+    background-color: rgb(76, 69, 69);
+}
+.item-right .btn-down:hover{
+    background-color: rgb(58, 53, 53);
+}
+.item-right .btn-up.MuiButton-containedSizeSmall {
+    padding: 0 !important;
+    background-color: rgb(178, 123, 52) !important;
+
+
+}
+
+.item-name {
+    width: 300px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.status-1 {
+    color: rgb(185, 0, 65);
+}
+.sale-item{
+    width: 100px;
+    text-align: center;
+}
+.btn-buy{
+    background-color: rgb(154, 0, 54) !important;
+}

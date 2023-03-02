@@ -1,0 +1,11 @@
+.loading-wrap{
+    width: 100vw;
+    height: calc(100vh - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.loading-wrap span{
+    font-size: 40px;
+}

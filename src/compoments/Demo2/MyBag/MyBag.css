@@ -1,0 +1,28 @@
+.bag-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 23px;
+    row-gap: 50px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.bag-list::-webkit-scrollbar-thumb {
+    /* background: linear-gradient(225deg, #7e5ccc, #593bc9); */
+    background-color: rgb(34, 38, 70);
+    border-radius: 5px;
+}
+
+.bag-list::-webkit-scrollbar {
+    width: 5px;
+    /* 对垂直滚动条有效 */
+}
+
+.bag-list::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+.modal-main{
+    padding-top: 5px;
+}

@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  width: 100%;
+  height: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgb(46, 46, 46)); */
+  /* background-image: linear-gradient(45deg, hsla(253,16%,7%,1),rgb(17, 7, 44), hsla(339,49%,30%,1)); */
+}
+ .ant-modal-content,.ant-modal-title{
+  background-color: rgb(4, 3, 25) !important;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.ant-modal-title,.ant-modal-close-x{
+  color: white !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-form-item-label label{
+  color: white !important;
+  min-width: 60px;
+}
+.ant-form-item-control-input-content .ant-btn{
+  width: 140px;
+}
+.form-button-wrap .ant-form-item-control-input-content{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+}
+.ant-input-number{
+  width: 100% !important;
+}
+.ant-modal-confirm-body .ant-modal-confirm-content{
+  color: white !important;
+}
+ .ant-modal-confirm-btns .ant-btn-default,.ant-modal-confirm-btns .ant-btn-default:hover{
+  background-color: rgb(76, 69, 69);
+  color: white;
+  border-color: white;
+}
+.ant-modal-confirm-btns .ant-btn-primary,.ant-modal-confirm-btns .ant-btn-primary:hover{
+  background-color: rgb(178, 123, 52);
+  color: white;
+  border-color: rgb(178, 123, 52);
+}
+.ant-empty-description{
+  color: white !important;
 }
