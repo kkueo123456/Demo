@@ -118,21 +118,9 @@ export default function MyAbate(props) {
     setFinalData(arr)
   };
   const agreeAbate = async (item) => {
-    publicFn(item, true, async (demo2Contract, address) => {
-      let price = item.price
-      let onSalePrice = item.onSalePrice
-      const res = await demo2Contract.acceptAbatePrice(item.id, item.buyer, Web3.utils.numberToHex(price), Web3.utils.numberToHex(onSalePrice))
-      try {
-        console.warn(res)
-        res.wait()
-        setWalletFn(address, demo2Contract)
-        onChange(5)
-      } catch (error) {
-        message.error(error)
-      }
-    })
+    publicFn(item, true)
   }
-  const publicFn = (item, type, cb) => {
+  const publicFn = (item, type) => {
     Modal.confirm({
       content: `确认${type ? '接受' : '拒绝'}该还价么？`,
       okText: "确认",
@@ -140,7 +128,20 @@ export default function MyAbate(props) {
       async onOk() {
         const { demo2Contract, address } = etherInfo
         try {
-          cb(demo2Contract, address)
+          setLoading(true)
+          let price = item.price
+          let onSalePrice = item.onSalePrice
+          let res
+          if (type) {
+            res = await demo2Contract.acceptAbatePrice(item.id, item.buyer, Web3.utils.numberToHex(price), Web3.utils.numberToHex(onSalePrice))
+          } else {
+            res = await demo2Contract.refuseBargain(item.id, item.buyer, Web3.utils.numberToHex(price), Web3.utils.numberToHex(onSalePrice), '拒绝')
+          }
+          await res.wait()
+          setWalletFn(address, demo2Contract)
+          await getInAbatePriceIdListFn()
+          onChange(5)
+          setLoading(false)
         } catch (error) {
           message.error(error)
         }
@@ -151,14 +152,7 @@ export default function MyAbate(props) {
     });
   }
   const disAgreeAbate = (item) => {
-    publicFn(item, false, async (demo2Contract, address) => {
-      let price = item.price
-      let onSalePrice = item.onSalePrice
-      const res = await demo2Contract.refuseBargain(item.id, item.buyer, Web3.utils.numberToHex(price), Web3.utils.numberToHex(onSalePrice), '拒绝')
-      res.wait()
-      setWalletFn(address, demo2Contract)
-      onChange(5)
-    })
+    publicFn(item, false)
   }
   const columns = [
     {

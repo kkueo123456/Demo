@@ -43,3 +43,6 @@
 .ant-empty-description{
   color: white !important;
 }
+.ant-checkbox-wrapper span{
+  color: white !important;
+}

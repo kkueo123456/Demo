@@ -2,6 +2,7 @@
   "name": "solidity_demo",
   "version": "0.1.0",
   "private": true,
+  "homepage":"./",
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@material-ui/core": "^4.12.4",
@@ -19,6 +20,7 @@
     "dotenv": "^16.0.3",
     "eth-rpc-errors": "^4.0.3",
     "ethers": "^5.6.1",
+    "gh-pages": "^5.0.0",
     "notistack": "^2.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -34,7 +36,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

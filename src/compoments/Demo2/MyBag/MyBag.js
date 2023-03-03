@@ -42,7 +42,7 @@ export default function MyBag(props) {
     } catch (error) {
       setIsModalOpen(false);
       setLoading(false)
-      message.error('上架失败，请重试');
+      message.error('请刷新后重试');
     }
   };
   const onFinishFailed = (errorInfo) => {
