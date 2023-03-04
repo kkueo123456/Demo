@@ -33,10 +33,10 @@ function App() {
       }>
         {route}
       </Suspense>
-      <Modal footer={null} width='400px' title="注意事项" open={isModalOpen} onCancel={()=>{setIsModalOpen(false)}} closable={true}>
+      <Modal footer={null} width='450px' title="注意事项" open={isModalOpen} onCancel={()=>{setIsModalOpen(false)}} closable={true}>
         <div className='modal-main'>
           <p>1.本DEMO内LOGO均来源于网络，如有侵权,请联系删除</p>
-          <p>2.查看该Demo请保证浏览器已安装MetaMask</p>
+          <p>2.查看该Demo请保证浏览器已安装MetaMask,并确保已连接至Goerli测试网络</p>
           <p>3.因DEMO内部分数据上传至IPFS，查看前请先科学上网</p>
           <p>4.NFT饰品交易平台Demo请移步至xxSkins查看</p>
           <p><Checkbox onChange={changeCheckBox}>今后不再显示该弹窗</Checkbox>  </p>
